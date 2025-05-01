@@ -1,0 +1,16 @@
+---
+description: Outlines how Cursor.ai should generate metadata, including fields, objects, permissions, and configurations.
+globs: 
+alwaysApply: false
+---
+**Description:** Outlines how Cursor.ai should generate metadata, including fields, objects, permissions, and configurations.
+
+### **5.1 Custom Fields, Objects & Relationships**
+- Generate metadata **only if necessary**.
+- Justify all new fields and objects with **descriptive comments**.
+
+### **5.2 Security & Profiles**
+- If needed, generate **Permission Sets** instead of modifying Profiles.
+
+### **5.3 Custom Labels & Internationalization**
+- Use **Custom Labels** for user-facing text.

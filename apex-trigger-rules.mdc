@@ -1,0 +1,21 @@
+---
+description: 
+globs: *.trigger,*.trigger-meta.xml
+alwaysApply: false
+---
+**Description:** Establishes guidelines for writing Apex triggers, ensuring they are structured, efficient, and secure.
+
+### **3.1 One Trigger Per Object**
+- Follow the **One Trigger Per Object** pattern.
+- Implement **Trigger Handlers** (`ObjectTriggerHandler.cls`).
+
+### **3.2 Trigger Context & Flow**
+- Use **Trigger.new, Trigger.old, and Trigger.newMap efficiently**.
+- **Before Triggers**: Modify records before saving.
+- **After Triggers**: Perform callouts, logging, or updates.
+
+### **3.3 Recursion Control**
+- Prevent **infinite loops** using **static boolean flags**.
+
+### **3.4 Security & Bulkification**
+- Process **all records in Trigger.new**, not just the first one.

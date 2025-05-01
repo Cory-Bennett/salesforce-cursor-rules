@@ -1,0 +1,18 @@
+---
+description: 
+globs: *.html,*.js,*.css,*.js-meta.xml
+alwaysApply: false
+---
+**Description:** Defines best practices for developing LWCs with efficiency, security, and maintainability.
+
+### **4.1 Data Retrieval & Optimization**
+- Use **@wire with LDS** (`lightning/ui*Api`) when possible.
+- Avoid multiple server calls; cache data where applicable (`cacheable=true`).
+
+### **4.2 Security & Error Handling**
+- Implement **lightning-toast** for errors.
+- Never use `innerHTML` for security reasons (XSS protection).
+
+### **4.3 SLDS2 & Accessibility**
+- Use **SLDS2 grid, classes, and styling** (`lightning-card`, `lightning-layout`).
+- Implement **ARIA attributes and keyboard navigation** for accessibility.

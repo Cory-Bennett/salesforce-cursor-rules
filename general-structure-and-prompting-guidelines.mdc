@@ -1,0 +1,23 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+**Description:** This section defines how Cursor.ai should structure code prompts, ensuring efficient AI-generated Salesforce solutions with proper security, performance, and maintainability.
+
+### **1.1 Follow Platform Best Practices**
+- Implement separation of concerns: reusable functions go into a **Utility class**.
+- Generate **all necessary metadata files** (e.g., `.cls-meta.xml`, `.js-meta.xml`, `.object-meta.xml`).
+
+### **1.2 Minimize New Artifacts**
+- Always **check for existing objects, fields, and components** before creating new ones.
+- If new objects or fields are required, generate metadata and justify their necessity.
+
+### **1.3 Document Decisions & Maintainability**
+- Use **ApexDocs for Apex** and **JSDoc for LWC** to document logic.
+- Explain **why** logic exists rather than what it does.
+- Keep comments relevant and **avoid unnecessary explanations**.
+
+### **1.4 Security & Performance**
+- Ensure **SOQL queries are bulkified** and avoid queries inside loops.
+- Optimize Lightning Web Components with **@wire and LDS** for efficiency.

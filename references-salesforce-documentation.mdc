@@ -1,0 +1,10 @@
+---
+description: For validation and best practices when writing code and creating or updating Flows
+globs: 
+alwaysApply: false
+---
+For validation and best practices, refer to:
+- **Salesforce Developer Guide**: [docs.salesforce.com](https://developer.salesforce.com/docs/)
+- **Apex Developer Guide**: [Apex Best Practices](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/)
+- **Lightning Web Components**: [LWC Guide](https://developer.salesforce.com/docs/component-library/documentation/en/lwc)
+- **Salesforce Flow Guide**: [Flow Automation](https://help.salesforce.com/s/articleView?id=sf.flow_considerations.htm&type=5)

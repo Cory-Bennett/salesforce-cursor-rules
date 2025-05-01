@@ -1,0 +1,32 @@
+---
+description: 
+globs: *.cls,*cls-meta.xml
+alwaysApply: false
+---
+**Description:** Covers best practices for writing Apex code, including structure, security, performance, and testability.
+
+### **2.1 Architecture & Separation of Concerns**
+- Use **Service Layer, Domain Layer, and Utility classes** for maintainability.
+- Business logic **must not** reside in triggers.
+
+### **2.2 SOQL and DML Operations**
+- **Never place SOQL or DML inside loops**.
+- Use **relationship queries** (subselects) instead of multiple queries.
+
+### **2.3 Error Handling**
+- Use structured **try-catch blocks**.
+- Implement **custom exception classes** for specific error scenarios.
+
+### **2.4 Security Checks**
+- Use `Schema.sObjectType.Account.fields.Name.isAccessible()` patterns.
+
+### **2.5 Naming Conventions**
+- **Class Names**: PascalCase (`MyExampleClass`)
+- **Method & Variable Names**: camelCase (`myExampleMethod`)
+- **Constants**: ALL_CAPS_WITH_UNDERSCORES (`MAX_RECORDS`)
+
+### **2.6 Test Coverage**
+- Achieve **100% coverage where possible** (minimum **75%**) with:
+  - **Bulk tests** for handling large datasets.
+  - **Positive and negative test cases**.
+  - **@testSetup methods** for data creation.
